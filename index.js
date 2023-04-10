@@ -1,34 +1,71 @@
+//CODIGO ENTREGA 2
+
+siIngresar = confirm("¿Estás seguro de que deseas continuar a mi sitio Web?");
+
+while (siIngresar == true) {
+
 function calculadora(numero1, numero2, operacion) {
-    switch (operacion) {
-        case "+":
-            return numero1 + numero2;
-        case "-":
-            return numero1 - numero2;
-        case "*":
-            return numero1 * numero2;
-        case "/":
-            return numero1 / numero2;
-        default:
-            break
-    }
+  switch (operacion) {
+    case "+":
+      return numero1 + numero2;
+    case "-":
+      return numero1 - numero2;
+    case "*":
+      return numero1 * numero2;
+    case "/":
+      return numero1 / numero2;
+    default:
+      break;
+  }
 }
 
-let numero1 = Number(prompt("Ingrese el numero 1"))
-let numero2 = Number(prompt("Ingrese el numero 2"))
-let operacion = prompt("Ingrese la operacion que desea realizar")
-let resultado = calculadora(numero1, numero2, operacion)
+do {
+  numero1 = parseInt(prompt("Ingresa el número 1"));
+} while (isNaN(numero1));
+do {
+  numero2 = parseInt(prompt("Ingresa el número 2"));
+} while (isNaN(numero2));
+let operacion = prompt("Ingrese la operacion que desea realizar + - * /");
+let resultado;
 
-if((numero1 || numero2) == ""){
-    alert("Debe ingresar todos los numeros")
-}else if (resultado == undefined){
-    alert(`ALGO ESTA MAL Y NO SE  por qué`)
-}else{
-    alert(`El resultado es: ${resultado}`)
+if (Number.isNaN(numero1) || Number.isNaN(numero2)) {
+  alert("Debe ingresar dos números válidos");
+} else {
+  resultado = calculadora(numero1, numero2, operacion);
+
+  if (resultado === undefined) {
+    alert("No ingresó una operación reconocida");
+  } else {
+    alert(`El resultado es: ${resultado}`);
+  }
+}
+  break;
 }
 
-if(operacion === ""){
-    alert("No ingreso una operacion valida")
-}
+/* const num1 = Number(prompt("Ingresa el primer número:"));
+const num2 = Number(prompt("Ingresa el segundo número:"));
+const operacion = prompt(
+  "Ingresa la operación a realizar (suma, resta, multiplicacion o division):"
+);
+
+const calcular = (numero1, numero2, operacion) => {
+  let resultado;
+  if (operacion === "suma" || operacion === "+") {
+    resultado = numero1 + numero2;
+  } else if (operacion === "resta" || operacion === "-") {
+    resultado = numero1 - numero2;
+  } else if (operacion === "multiplicacion" || operacion === "*") {
+    resultado = numero1 * numero2;
+  } else if (operacion === "division" || operacion === "/") {
+    resultado = numero1 / numero2;
+  } else {
+    resultado = "Operación no válida";
+  }
+  return resultado;
+};
+
+const resultado = calcular(num1, num2, operacion);
+console.log(resultado); */
 
 /* const persona1 = {
     nombre: "Manuel",
@@ -50,8 +87,7 @@ console.log(persona.apellido) */
 const productoNuevo = new Producto("Computadora", "https", 34500, "Una descripcion muy buena")
 console.log(productoNuevo); */
 
-/* 
-class Producto {
+/* class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
         this.precio = precio;
@@ -68,8 +104,7 @@ class Producto {
 const producto1 = new Producto("monitor", 232323)
 console.log(producto1)
 producto1.vender();
-const producto2 = new Producto("monitor samsumg", 100000)
- */
+const producto2 = new Producto("monitor samsumg", 100000) */
 
 /* function recorrer(array, funcion){
     for(const item of array){
@@ -77,7 +112,6 @@ const producto2 = new Producto("monitor samsumg", 100000)
     }
 }
 recorrer([1,2,3], console.log) */
-
 
 /* const array1 = [];
 const arrayNumero = [1,2,3,11,12,13];
@@ -88,7 +122,7 @@ const varios = [1, true, "case"];
 
 console.log(array1); //muestra clg de un array vacio []
 console.log(arrayNumero); //muestra clg de mis numeros [1,2,n...]
-console.log(varios[1]); //trae la posicion que pido   */  
+console.log(varios[1]); //trae la posicion que pido   */
 
 /* const productos = [
     {id: 1, nombre: "pantalones", precio:1000 },
@@ -146,8 +180,6 @@ console.log(varios); //concatena los arreglos   */
 /* const nombres = ["andres", "camila", "mariano", "tania", "andrea", "carlos"];
 const copia = nombres .slice(2 ,4);// crea copia, el primer parametro partiendo de 0. el segundo parametro hasta el N parametro partiendo de 0. pero pero el N no se incluye por lo tanto llega hasta N-1
 console.log(copia); */
-
-
 
 /* let num1 = 2
 let num2 = 4
