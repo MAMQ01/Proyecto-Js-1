@@ -3,44 +3,78 @@
 siIngresar = confirm("¿Estás seguro de que deseas continuar a mi sitio Web?");
 
 while (siIngresar == true) {
-
-function calculadora(numero1, numero2, operacion) {
-  switch (operacion) {
-    case "+":
-      return numero1 + numero2;
-    case "-":
-      return numero1 - numero2;
-    case "*":
-      return numero1 * numero2;
-    case "/":
-      return numero1 / numero2;
-    default:
-      break;
+  function calculadora(numero1, numero2, operacion) {
+    switch (operacion) {
+      case "+":
+        return numero1 + numero2;
+      case "-":
+        return numero1 - numero2;
+      case "*":
+        return numero1 * numero2;
+      case "/":
+        return numero1 / numero2;
+      default:
+        break;
+    }
   }
-}
 
-do {
-  numero1 = parseInt(prompt("Ingresa el número 1"));
-} while (isNaN(numero1));
-do {
-  numero2 = parseInt(prompt("Ingresa el número 2"));
-} while (isNaN(numero2));
-let operacion = prompt("Ingrese la operacion que desea realizar + - * /");
-let resultado;
+  do {
+    numero1 = parseInt(prompt("Ingresa el número 1"));
+  } while (isNaN(numero1));
+  do {
+    numero2 = parseInt(prompt("Ingresa el número 2"));
+  } while (isNaN(numero2));
+  let operacion = prompt("Ingrese la operacion que desea realizar + - * /");
+  let resultado;
 
-if (Number.isNaN(numero1) || Number.isNaN(numero2)) {
-  alert("Debe ingresar dos números válidos");
-} else {
-  resultado = calculadora(numero1, numero2, operacion);
-
-  if (resultado === undefined) {
-    alert("No ingresó una operación reconocida");
+  if (Number.isNaN(numero1) || Number.isNaN(numero2)) {
+    alert("Debe ingresar dos números válidos");
   } else {
-    alert(`El resultado es: ${resultado}`);
+    resultado = calculadora(numero1, numero2, operacion);
+
+    if (resultado === undefined) {
+      alert("No ingresó una operación reconocida");
+    } else {
+      alert(`El resultado es: ${resultado}`);
+    }
   }
-}
   break;
 }
+
+class Producto {
+  constructor(nombre, precio, cantidad) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.cantidad = cantidad;
+  }
+  vender() {
+    if (this.cantidad > 0) {
+      this.cantidad = this.cantidad - 1;
+      console.log(this.cantidad);
+    } else {
+      console.log("Producto agotado");
+    }
+  }
+}
+const producto1 = new Producto("monitor", 50000, 50);
+
+console.log(`Agregué el producto ${producto1.nombre}`);
+
+const producto2 = new Producto("mouse", 20000, 10);
+console.log(`Agregué el producto ${producto2.nombre}`);
+
+producto2.vender();
+console.log(
+  `vendí 1 unidad de: ${producto2.nombre}, me quedan ${producto2.cantidad}`
+);
+producto2.vender();
+console.log(
+  `vendí 1 unidad de: ${producto2.nombre}, me quedan ${producto2.cantidad}`
+);
+producto1.vender();
+console.log(
+  `vendí 1 unidad de: ${producto1.nombre}, me quedan ${producto1.cantidad}`
+);
 
 /* const num1 = Number(prompt("Ingresa el primer número:"));
 const num2 = Number(prompt("Ingresa el segundo número:"));
@@ -86,25 +120,6 @@ console.log(persona.apellido) */
 
 const productoNuevo = new Producto("Computadora", "https", 34500, "Una descripcion muy buena")
 console.log(productoNuevo); */
-
-/* class Producto {
-    constructor(nombre, precio) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = 5;
-    }
-    vender() { 
-        if (this.cantidad > 0) {
-            this.cantidad = this.cantidad - 1;
-        }else{
-            console.log("Producto agotado")
-        }
-    }
-}
-const producto1 = new Producto("monitor", 232323)
-console.log(producto1)
-producto1.vender();
-const producto2 = new Producto("monitor samsumg", 100000) */
 
 /* function recorrer(array, funcion){
     for(const item of array){
