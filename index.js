@@ -1,5 +1,6 @@
 //CODIGO ENTREGA 2
 
+//Calculadora
 siIngresar = confirm("¿Estás seguro de que deseas continuar a mi sitio Web?");
 
 while (siIngresar == true) {
@@ -41,6 +42,8 @@ while (siIngresar == true) {
   break;
 }
 
+
+//Creando una clase producto, y un metodo vender
 class Producto {
   constructor(nombre, precio, cantidad) {
     this.nombre = nombre;
@@ -78,12 +81,40 @@ console.log(
 
 console.log(`Todas las prendas:`,prendas);
 
-// Filtrar prendas con precio menor a 50
+// Filtrando prendas con precio menor a 50
 const prendasBaratas = prendas.filter(function(prenda) {
   return prenda.precio < 50;
 });
 
 console.log(`Prendas con precio menor a 50:`,prendasBaratas);
+
+
+// Creando un array de objetos con el nombre y precio de cada prenda
+const nombreYPrecio = prendas.map(function(prenda) {
+  return { nombre: prenda.nombre, precio: prenda.precio };
+});
+
+console.log(nombreYPrecio);
+
+// Calculando el precio total de todas las prendas
+const precioTotal = prendas.reduce(function(acumulador, prenda) {
+  return acumulador + prenda.precio;
+}, 0);
+
+console.log(`El precio total de todas las prendas es:`,precioTotal);
+
+// Seleccionando las prendas con precio menor o igual a 50
+const prendasSeleccionadas = prendas.filter(function(prenda) {
+  return prenda.precio <= 50;
+});
+
+// Agregando las prendas seleccionadas al carrito
+prendasSeleccionadas.forEach(function(prenda) {
+  carrito.push(prenda);
+});
+
+console.log(`Agrego las siguientes prendas:`, carrito, `un total de`, carrito.length);
+
 /* const num1 = Number(prompt("Ingresa el primer número:"));
 const num2 = Number(prompt("Ingresa el segundo número:"));
 const operacion = prompt(
