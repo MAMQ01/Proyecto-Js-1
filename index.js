@@ -76,6 +76,14 @@ console.log(
   `vendí 1 unidad de: ${producto1.nombre}, me quedan ${producto1.cantidad}`
 );
 
+console.log(`Todas las prendas:`,prendas);
+
+// Filtrar prendas con precio menor a 50
+const prendasBaratas = prendas.filter(function(prenda) {
+  return prenda.precio < 50;
+});
+
+console.log(`Prendas con precio menor a 50:`,prendasBaratas);
 /* const num1 = Number(prompt("Ingresa el primer número:"));
 const num2 = Number(prompt("Ingresa el segundo número:"));
 const operacion = prompt(
