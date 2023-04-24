@@ -115,6 +115,9 @@ prendasSeleccionadas.forEach(function(prenda) {
 
 console.log(`Agrego las siguientes prendas:`, carrito, `un total de`, carrito.length);
 
+
+
+
 /* const num1 = Number(prompt("Ingresa el primer número:"));
 const num2 = Number(prompt("Ingresa el segundo número:"));
 const operacion = prompt(
