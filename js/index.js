@@ -1,11 +1,12 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
 
-function cargarProductos() {
+function cargarProductos(productosElegidos) {
+  contenedorProductos.innerHTML = "";
 
-  productos.forEach(producto => {
-
+  productosElegidos.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add("producto");
     div.innerHTML = `
@@ -20,12 +21,28 @@ function cargarProductos() {
       <button class="producto-agregar" id="${producto.id}">Agregar</button>
     </div>
   `;
-  contenedorProductos.append(div);
-  })
-
+    contenedorProductos.append(div);
+  });
 }
 
-cargarProductos();
+cargarProductos(productos);
+
+botonesCategorias.forEach((boton) => {
+  boton.addEventListener("click", (e) => {
+    botonesCategorias.forEach((boton) => boton.classList.remove("active"));
+
+    if (e.currentTarget.id != "todos") {
+      e.currentTarget.classList.add("active");
+      const productosBoton = productos.filter(
+        (producto) => producto.categoria.id === e.currentTarget.id
+      );
+      cargarProductos(productosBoton);
+    }else{
+      cargarProductos(productos);
+    }
+  });
+});
+
 ///////////////
 
 /* 

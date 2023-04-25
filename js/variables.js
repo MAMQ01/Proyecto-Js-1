@@ -22,7 +22,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 8.99,
   },
@@ -33,7 +33,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Entrada",
-      id: "Entrada",
+      id: "entradas",
     },
     precio: 4.99,
   },
@@ -44,7 +44,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 10.99,
   },
@@ -55,7 +55,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Sopa",
-      id: "Sopa",
+      id: "sopas",
     },
     precio: 6.99,
   },
@@ -66,7 +66,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Entrada",
-      id: "Entrada",
+      id: "entradas",
     },
     precio: 7.99,
   },
@@ -77,7 +77,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 9.99,
   },
@@ -88,7 +88,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 11.99,
   },
@@ -99,7 +99,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Entrada",
-      id: "Entrada",
+      id: "entradas",
     },
     precio: 5.99,
   },
@@ -110,7 +110,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 10.99,
   },
@@ -121,7 +121,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 8.99,
   },
@@ -132,7 +132,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Acompañamiento",
-      id: "Acompañamiento",
+      id: "acompañamientos",
     },
     precio: 3.99,
   },
@@ -143,7 +143,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Entrada",
-      id: "Entrada",
+      id: "entradas",
     },
     precio: 6.99,
   },
@@ -154,7 +154,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 12.99,
   },
@@ -165,7 +165,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 9.99,
   },
@@ -176,7 +176,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Sopa",
-      id: "Sopa",
+      id: "sopas",
     },
     precio: 5.99,
   },
@@ -187,7 +187,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Entrada",
-      id: "Entrada",
+      id: "entradas",
     },
     precio: 4.99,
   },
@@ -198,7 +198,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "plato principal",
     },
     precio: 11.99,
   },
@@ -209,7 +209,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "plato principal",
     },
     precio: 13.99,
   },
@@ -220,7 +220,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Plato principal",
-      id: "Plato principal",
+      id: "platos-principales",
     },
     precio: 8.99,
   },
@@ -231,7 +231,7 @@ const productos = [
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
       nombre: "Sopa",
-      id: "Sopa",
+      id: "sopas",
     },
     precio: 6.99,
   },
