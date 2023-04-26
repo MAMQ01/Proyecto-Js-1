@@ -16,231 +16,224 @@ const prendas = [
 
 const productos = [
   {
-    id: 1,
+    id: "Arroz-frito",
     titulo: "Arroz frito",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 8.99,
   },
   {
-    id: 2,
+    id: "Wonton",
     titulo: "Wonton",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Entrada",
+      nombre: "Entradas",
       id: "entradas",
     },
     precio: 4.99,
   },
   {
-    id: 3,
+    id: "Chow-Mein-de-pollo",
     titulo: "Chow Mein de pollo",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 10.99,
   },
   {
-    id: 4,
+    id: "Sopa-agripicante",
     titulo: "Sopa agripicante",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Sopa",
+      nombre: "Sopas",
       id: "sopas",
     },
     precio: 6.99,
   },
   {
-    id: 5,
+    id: "Dim-Sum-de-cerdo",
     titulo: "Dim Sum de cerdo",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Entrada",
+      nombre: "Entradas",
       id: "entradas",
     },
     precio: 7.99,
   },
   {
-    id: 6,
+    id: "Pollo-agridulce",
     titulo: "Pollo agridulce",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 9.99,
   },
   {
-    id: 7,
+    id: "Ternera-con-brócoli",
     titulo: "Ternera con brócoli",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 11.99,
   },
   {
-    id: 8,
+    id:"Rollitos-de-primavera",
     titulo: "Rollitos de primavera",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Entrada",
+      nombre: "Entradas",
       id: "entradas",
     },
     precio: 5.99,
   },
   {
-    id: 9,
+    id:"Cerdo-agridulce",
     titulo: "Cerdo agridulce",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 10.99,
   },
   {
-    id: 10,
+    id: "Chop-suey-de-vegetales",
     titulo: "Chop suey de vegetales",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 8.99,
   },
   {
-    id: 11,
+    id: "Fideos-de-huevo",
     titulo: "Fideos de huevo",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Acompañamiento",
+      nombre: "Acompañamientos",
       id: "acompañamientos",
     },
     precio: 3.99,
   },
   {
-    id: 12,
+    id: "Ensalada-de-algas",
     titulo: "Ensalada de algas",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Entrada",
+      nombre: "Entradas",
       id: "entradas",
     },
     precio: 6.99,
   },
   {
-    id: 13,
+    id: "Camarones-con-nueces",
     titulo: "Camarones con nueces",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 12.99,
   },
   {
-    id: 14,
+    id: "Tofu-con-verduras",
     titulo: "Tofu con verduras",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos principales",
       id: "platos-principales",
     },
     precio: 9.99,
   },
   {
-    id: 15,
+    id: "Sopa-de-fideos-de-huevo",
     titulo: "Sopa de fideos de huevo",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Sopa",
+      nombre: "Sopas",
       id: "sopas",
     },
     precio: 5.99,
   },
   {
-    id: 16,
+    id: "Rollo-de-huevo",
     titulo: "Rollo de huevo",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Entrada",
+      nombre: "Entradas",
       id: "entradas",
     },
     precio: 4.99,
   },
   {
-    id: 17,
+    id: "Pollo-Kung-Pao",
     titulo: "Pollo Kung Pao",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
-      id: "plato principal",
+      nombre: "Platos principales",
+      id: "platos-principales",
     },
     precio: 11.99,
   },
   {
-    id: 18,
+    id: "Arroz-frito-con-camarones",
     titulo: "Arroz frito con camarones",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
-      id: "plato principal",
+      nombre: "Platos principales",
+      id: "platos-principal",
     },
     precio: 13.99,
   },
   {
-    id: 19,
+    id: "Chow-Mein-de-verduras",
     titulo: "Chow Mein de verduras",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Plato principal",
+      nombre: "Platos Principales",
       id: "platos-principales",
     },
     precio: 8.99,
   },
   {
-    id: 20,
+    id: "Sopa-wonton",
     titulo: "Sopa wonton",
     imagen:
       "https://res.cloudinary.com/dicnsypv0/image/upload/v1671488286/polloAsiatic-min_xww15s.png",
     categoria: {
-      nombre: "Sopa",
+      nombre: "sopas",
       id: "sopas",
     },
     precio: 6.99,
   },
 ];
 
-console.log(productos);
-
-
-
-function cargarProductos() {
-
-}
